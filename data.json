@@ -1,0 +1,13 @@
+[{
+    "Company": "Apple",
+	"Asset":120,
+	"Drift":0.21,
+	"Volatility":0.26,
+	"Timestep":0.02
+}, {
+    "Company": "Microsoft",
+	"Asset":150,
+	"Drift":0.30,
+	"Volatility":0.31,
+	"Timestep":0.04
+}]

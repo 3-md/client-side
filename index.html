@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+		<title>Calculations</title>
+		<script src="/js/jquery-2.1.4.min.js" async type="text/javascript"></script>
+		<link href="app-content/app.css" rel="stylesheet" />
+		<script src="/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="/js/calc_form_validation.js" type="text/javascript"></script>
+		<script src="/js/jsapi" type="text/javascript"></script>
+		<script src="/js/calc.js" type="text/javascript"></script>
+		<script src="/js/chart.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="/css/bootstrap.min.css" />
+		<script src="/js/angular.js"></script>
+		<script src="/js/angular-route.js"></script>
+		<script src="/js/angular-cookies.js"></script>
+		<script src="app.js"></script>
+		<script src="app-services/authentication.service.js"></script>
+		<script src="app-services/flash.service.js"></script>
+		<script src="app-services/user.service.local-storage.js"></script>
+		<script src="home/home.controller.js"></script>
+		<script src="login/login.controller.js"></script>
+		<script src="register/register.controller.js"></script>
+	</head>
+	<body>
+		<div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+		<div ng-view></div>
+	</body>
+</html>
